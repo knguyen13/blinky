@@ -1,3 +1,7 @@
+# Project
+project/KBL/*
+!project/KBL/main.c
+
 # Prerequisites
 *.d
 

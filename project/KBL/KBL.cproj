@@ -119,7 +119,7 @@
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
-      <Value>../../../platform/drivers/inc</Value>
+      <Value>../../../drivers/inc</Value>
       <Value>../../../hal/hal_gpio/inc</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
@@ -148,6 +148,14 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\drivers\inc\d_gpio.h">
+      <SubType>compile</SubType>
+      <Link>d_gpio.h</Link>
+    </Compile>
+    <Compile Include="..\..\drivers\src\d_gpio.c">
+      <SubType>compile</SubType>
+      <Link>d_gpio.c</Link>
+    </Compile>
     <Compile Include="..\..\hal\hal_gpio\inc\hal_gpio.h">
       <SubType>compile</SubType>
       <Link>hal_gpio.h</Link>
@@ -155,14 +163,6 @@
     <Compile Include="..\..\hal\hal_gpio\src\hal_gpio.c">
       <SubType>compile</SubType>
       <Link>hal_gpio.c</Link>
-    </Compile>
-    <Compile Include="..\..\platform\drivers\inc\gpio_api.h">
-      <SubType>compile</SubType>
-      <Link>gpio_api.h</Link>
-    </Compile>
-    <Compile Include="..\..\platform\drivers\src\gpio_api.c">
-      <SubType>compile</SubType>
-      <Link>gpio_api.c</Link>
     </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>

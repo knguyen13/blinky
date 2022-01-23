@@ -30,7 +30,7 @@ typedef enum
 	GPIO_BTN_SW3,
 	GPIO_BTN_SW4,
 	GPIO_BTN_SW5,
-	GPIO_BTN_ALL	
+	GPIO_BTN_ALL
 } gpio_btn_no_e;
 
 typedef struct

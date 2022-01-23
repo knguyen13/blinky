@@ -16,7 +16,7 @@ void gpio_led_en(void)
 
 void gpio_led_config(gpio_led_t led_config)
 {
-	switch (led_config.num) 
+	switch (led_config.num)
 	{
 		case GPIO_LED_D2:
 			hal_gpio_led_out(0xF8 + led_config.color, 0xFF);

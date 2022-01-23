@@ -2,6 +2,8 @@
 #ifndef _GPIO_H_
 #define _GPIO_H_
 
+#include <stdint.h>
+
 /* Defines */
 
 /* Typedefs */
@@ -27,10 +29,14 @@ typedef enum
 
 typedef enum
 {
-	GPIO_BTN_SW3,
-	GPIO_BTN_SW4,
-	GPIO_BTN_SW5,
-	GPIO_BTN_ALL
+	GPIO_BTN_ALL	= 0b000,
+	GPIO_BTN_SW45	= 0b001,
+	GPIO_BTN_SW35	= 0b010,
+	GPIO_BTN_SW5	= 0b011,
+	GPIO_BTN_SW34	= 0b100,
+	GPIO_BTN_SW4	= 0b101,
+	GPIO_BTN_SW3	= 0b110,
+	GPIO_BTN_NONE	= 0b111
 } gpio_btn_no_e;
 
 typedef struct
@@ -42,6 +48,11 @@ typedef struct
 /* Private functions */
 
 /* Public functions */
+
+void gpio_btn_en(void);
+
+uint8_t gpio_btn_read(void);
+
 void gpio_led_en(void);
 
 void gpio_led_config(gpio_led_t led_config);

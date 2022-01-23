@@ -9,6 +9,16 @@
 /* Private functions */
 
 /* Public functions */
+void gpio_btn_en(void)
+{
+	hal_gpio_btn_en();
+}
+
+uint8_t gpio_btn_read(void)
+{
+	return hal_gpio_btn_read();
+}
+
 void gpio_led_en(void)
 {
 	hal_gpio_led_en();

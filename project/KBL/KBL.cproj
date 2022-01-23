@@ -121,6 +121,7 @@
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
       <Value>../../../drivers/inc</Value>
       <Value>../../../hal/hal_gpio/inc</Value>
+      <Value>../../../apps/gpio/inc</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
@@ -148,6 +149,14 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\apps\gpio\inc\gpio.h">
+      <SubType>compile</SubType>
+      <Link>gpio.h</Link>
+    </Compile>
+    <Compile Include="..\..\apps\gpio\src\gpio.c">
+      <SubType>compile</SubType>
+      <Link>gpio.c</Link>
+    </Compile>
     <Compile Include="..\..\drivers\inc\d_gpio.h">
       <SubType>compile</SubType>
       <Link>d_gpio.h</Link>

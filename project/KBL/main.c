@@ -1,9 +1,8 @@
-/*
- * KBL.c
- *
- * Created: 1/8/2022 7:23:05 PM
- * Author : knguyen
- */ 
+/*! @file 		main.c
+ *	@author 	Kevin Nguyen
+ *	@date		03/04/2022
+ *	@brief		main
+ */
 
 int main(void)
 {

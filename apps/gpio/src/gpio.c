@@ -1,7 +1,14 @@
+/*! @file 		gpio.c
+ *	@author 	Kevin Nguyen
+ *	@date		03/04/2022
+ *	@brief		gpio applications
+ */
+
 /* Includes */
 #include <avr/io.h>
 #include "gpio.h"
 #include "hal_gpio.h"
+
 /* Defines */
 
 /* Typedefs */

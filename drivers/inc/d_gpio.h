@@ -21,9 +21,9 @@
  */
 typedef enum
 {
-	D_GPIO_PORTB,	/*!< */
-	D_GPIO_PORTC,	/*!< */
-	D_GPIO_PORTD	/*!< */
+    D_GPIO_PORTB,	/*!< */
+    D_GPIO_PORTC,	/*!< */
+    D_GPIO_PORTD	/*!< */
 } d_gpio_port_e;
 
 /*!
@@ -31,8 +31,8 @@ typedef enum
  */
 typedef enum
 {
-	D_GPIO_DD_IN,	/*!< */
-	D_GPIO_DD_OUT	/*!< */
+    D_GPIO_DD_IN,	/*!< */
+    D_GPIO_DD_OUT	/*!< */
 } d_gpio_dd_e;
 
 /*!
@@ -40,9 +40,9 @@ typedef enum
  */
 typedef struct
 {
-	d_gpio_port_e port_no;			/*!< */
-	d_gpio_dd_e data_direction;		/*!< */
-	uint8_t pin_no;					/*!< */
+    d_gpio_port_e port_no;			/*!< */
+    d_gpio_dd_e data_direction;		/*!< */
+    uint8_t pin_no;					/*!< */
 } d_gpio_port_t;
 
 /* Private functions */
@@ -51,9 +51,9 @@ typedef struct
 
 /*!
  * @brief initializes the gpios
- * 
+ *
  * @param[in] port - port information
- * 
+ *
  * @return none
  */
 void d_gpio_init(d_gpio_port_t port);

@@ -1,1 +1,1 @@
-astyle --style=allman --recursive --suffix=none /../*.c,*.h
+astyle --style=allman --recursive --suffix=none ../../rainbow/*.c,*.h
